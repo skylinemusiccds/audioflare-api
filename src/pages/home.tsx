@@ -105,11 +105,11 @@ Home.get('/', (c) => {
               />
             </svg>
             <p class="text-2xl md:text-4xl text-transparent font-bold leading-none bg-clip-text bg-gradient-to-r from-[#ff7d78] to-purple-600">
-              JioSaavn API
-              <span class="uppercase text-sm ml-3 text-gray-500 font-normal sm:hidden">Unofficial</span>
+              AudioFlare API
+              <span class="uppercase text-sm ml-3 text-gray-500 font-normal sm:hidden">official</span>
             </p>
             <p class="hidden sm:block animate-[borderAnimation_3s_linear_infinite] rounded bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
-              <span class="block rounded px-1.5 py-0.5 text-xs text-white uppercase tracking-wider">Unofficial</span>
+              <span class="block rounded px-1.5 py-0.5 text-xs text-white uppercase tracking-wider">official</span>
             </p>
           </div>
 
