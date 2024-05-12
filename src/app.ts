@@ -43,9 +43,9 @@ export class App {
 
         info: {
           version: '1.0.0',
-          title: 'JioSaavn API',
+          title: 'AudioFlare API',
           description: `# Introduction 
-        \nJioSaavn API, accessible at [saavn.dev](https://saavn.dev), is an unofficial API that allows users to download high-quality songs from [JioSaavn](https://jiosaavn.com). 
+        \nAudioFlare API, accessible at [AudioFlare.com/api-service](https://audioflare-api.vercel.app), is an official API that allows users to download high-quality songs from [AudioFlare](https://audioflare.vercel.app). 
         It offers a fast, reliable, and easy-to-use API for developers. \n`
         },
         servers: [{ url: `${protocol}//${hostname}${port ? `:${port}` : ''}`, description: 'Current environment' }]
@@ -55,19 +55,19 @@ export class App {
     this.app.get(
       '/docs',
       apiReference({
-        pageTitle: 'JioSaavn API Documentation',
+        pageTitle: 'AudioFlare API Documentation',
         theme: 'deepSpace',
         isEditable: false,
         layout: 'modern',
         darkMode: true,
         metaData: {
-          applicationName: 'JioSaavn API',
-          author: 'Sumit Kolhe',
-          creator: 'Sumit Kolhe',
-          publisher: 'Sumit Kolhe',
+          applicationName: 'AudioFlare API',
+          author: 'Satyam Singh',
+          creator: 'Satyam Singh',
+          publisher: 'Universe Corporation',
           robots: 'index, follow',
           description:
-            'JioSaavn API is an unofficial wrapper written in TypeScript for jiosaavn.com providing programmatic access to a vast library of songs, albums, artists, playlists, and more.'
+            'AudioFlare API is an official wrapper written in TypeScript for AudioFlare.com providing programmatic access to a vast library of songs, albums, artists, playlists, and more.'
         },
         spec: { url: '/swagger' }
       })
@@ -76,7 +76,7 @@ export class App {
 
   private initializeRouteFallback() {
     this.app.notFound((ctx) => {
-      return ctx.json({ success: false, message: 'route not found, check docs at https://saavn.dev/docs' }, 404)
+      return ctx.json({ success: false, message: 'route not found, check docs at https://audioflare-api.vercel.app/docs' }, 404)
     })
   }
 
